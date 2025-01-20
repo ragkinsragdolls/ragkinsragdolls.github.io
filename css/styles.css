@@ -5,16 +5,17 @@
 
 body {
   background-color: #eee;
-  color: #6c6c6c;
+  color: #3a3939;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
   overflow-x: hidden;
 }
 
-.jacques-francois-shadow-regular {
-  font-family: "Jacques Francois Shadow", serif;
-  font-weight: 400;
-  font-style: normal;
+p,
+li,
+ul {
+  font-size: 1.4rem;
+  margin: 0px;
 }
 
 title,
@@ -45,7 +46,7 @@ h6 {
 }
 
 .tm-logo {
-  width: 16vw;
+  width: 20vw;
   display: inline;
 }
 
@@ -57,11 +58,15 @@ h6 {
   display: inline;
   text-align: left;
 }
+.tm-heading {
+  color: #0095bf;
+  font-size: 2rem;
+}
 
 .tm-subtitle {
   color: #0095bf;
-  font-size: 4vw;
-  line-height: 4vw;
+  font-size: 4.8vw;
+  line-height: 5vw;
   margin-bottom: 2px;
   text-align: left;
 }
@@ -100,6 +105,10 @@ h6 {
   align-items: center;
 }
 
+.tm-reg-logo {
+  width: 90%;
+}
+
 .tm-color-primary {
   color: #cc0064;
 }
@@ -128,27 +137,14 @@ h6 {
   background-color: #44cbf1;
 }
 
-.tm-bg-circle-white {
+.tm-text-box {
   background-color: white;
-  color: #6c6c6c;
-  padding: 75px 81px 75px 90px;
-  border-radius: 50%;
-  width: 550px;
-  height: 550px;
+  padding: 10px;
+  border-radius: 30px;
 }
 
-.tm-bg-circle-pad-2 {
-  padding-left: 120px;
-}
-
-p,
-ul {
-  line-height: 2;
-  font-weight: 300;
-}
-
-ul {
-  margin: 0;
+li {
+  padding: 5px;
 }
 ul.dashed {
   list-style-type: none;
@@ -180,16 +176,10 @@ a.btn:hover {
   justify-content: center;
 }
 
-.tm-text-container {
-  max-width: 420px;
-}
-
-.tm-circle-img {
-  width: 550px;
-}
-
-.tm-circle-img-container {
-  text-align: right;
+.tm-rounded-img {
+  width: 97%;
+  margin: 5px;
+  border-radius: 30px;
 }
 
 .tm-contact-form {
@@ -231,11 +221,15 @@ a.btn:hover {
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    /* max-width: 90%; */
   }
 
   .tm-social-media {
     padding-top: 400px;
+  }
+
+  .tm-social-media img {
+    padding: 0 90px;
   }
 
   .tm-section-1 {
@@ -245,7 +239,7 @@ a.btn:hover {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    /* max-width: 960px; */
   }
 
   .tm-title {
@@ -259,7 +253,8 @@ a.btn:hover {
 
   .tm-subtitle {
     color: #0095bf;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
     margin-bottom: 5px;
     text-align: left;
   }
@@ -273,10 +268,10 @@ a.btn:hover {
 @media (min-width: 1200px) {
   .container,
   .container-fluid {
-    max-width: 1050px;
+    max-width: 1080px;
   }
 }
-
+/* 
 @media (max-width: 992px) {
   .tm-bg-circle-white {
     margin-left: auto;
@@ -328,4 +323,4 @@ a.btn:hover {
   .tm-circle-img-container {
     margin-bottom: 30px;
   }
-}
+} */

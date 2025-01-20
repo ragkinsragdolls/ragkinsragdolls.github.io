@@ -11,31 +11,76 @@ body {
   overflow-x: hidden;
 }
 
+.jacques-francois-shadow-regular {
+  font-family: "Jacques Francois Shadow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+title,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jacques Francois Shadow", serif;
+  color: #91ba9a;
+  margin: 0px;
+}
+
 .tm-container {
   background-color: white;
-  max-width: 1400px;
+  padding: 0px;
 }
 
-.tm-site-title {
-  color: #cc0064;
-  font-size: 3rem;
+.tm-header {
+  padding: 10px;
+  text-align: right;
+  overflow: hidden;
 }
 
-.tm-site-subtitle {
+.tm-logo {
+  width: 12vw;
+  display: inline;
+}
+
+.tm-title {
+  font-size: 5.3vw;
+  font-family: "Jacques Francois Shadow", serif;
+  color: #91ba9a;
+  display: inline;
+  text-align: left;
+}
+
+.tm-subtitle {
   color: #0095bf;
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+  font-size: 2.8vw;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.tm-social-media {
+  padding-top: 50vh;
+  text-align: right;
+}
+
+.tm-social-media {
+  text-align: center;
+}
+
+.tm-social-media img {
+  height: 100px;
+  padding: 0px 20px;
 }
 
 .tm-section-1 {
-  height: 750px;
+  height: 70vh;
   background-image: url(../img/spot-bg-01.jpg);
   background-size: cover;
   -webkit-clip-path: polygon(0px 0px, 100% 0px, 100% 84%, 0px 100%);
-  clip-path: polygon(0px 0px, 100% 0px, 100% 84%, 0px 100%);
-  /* background-position: center -95px; */
+  clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 90%);
+  background-position: center top;
   background-repeat: no-repeat;
-  padding-top: 75px;
 }
 
 .tm-section-3 {
@@ -177,6 +222,14 @@ a.btn:hover {
   .container {
     max-width: none;
   }
+
+  /* .tm-title {
+    font-size: 6vw;
+  } */
+
+  /* .tm-subtitle {
+    font-size: 3vw;
+  } */
 }
 @media (min-width: 768px) {
   .container {
@@ -187,6 +240,26 @@ a.btn:hover {
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+
+  .tm-title {
+    font-size: 3.5rem;
+    font-family: "Jacques Francois Shadow", serif;
+    color: #91ba9a;
+    display: inline;
+    text-align: left;
+  }
+
+  .tm-subtitle {
+    color: #0095bf;
+    font-size: 1.9rem;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .tm-logo {
+    width: 140px;
+    margin-right: 20px;
   }
 }
 
@@ -235,11 +308,6 @@ a.btn:hover {
 
   img {
     max-width: 100%;
-  }
-
-  .tm-section-1,
-  .tm-section-3 {
-    height: auto;
   }
 
   .tm-section-1 {

@@ -14,7 +14,7 @@ body {
 p,
 li,
 ul {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin: 0px;
 }
 
@@ -95,14 +95,17 @@ h6 {
 }
 
 .tm-section-3 {
-  height: 790px;
+  height: 820px;
   background-image: url(../img/spot-bg-02.jpg);
   background-size: cover;
-  -webkit-clip-path: polygon(0px 0px, 100% 14%, 100% 86%, 0px 100%);
-  clip-path: polygon(0px 0px, 100% 14%, 100% 86%, 0px 100%);
+  -webkit-clip-path: polygon(0px 0px, 100% 0%, 100% 86%, 0px 100%);
+  clip-path: polygon(0px 0px, 100% 0%, 100% 86%, 0px 100%);
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
+  align-items: top;
+  justify-content: center;
+
+  padding-top: 30px;
 }
 
 .tm-reg-logo {
